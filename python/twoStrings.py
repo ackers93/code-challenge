@@ -1,10 +1,8 @@
 def twoStrings(s1, s2):
 
     # function expects return output in the form of a string "YES" or "NO"
-​
    # What's a common substring? Any character that is present in both strings.
     # How can we find characters that are present in both strings?
-​
     # Iterate through both strings and compare them to each other
         # How exactly would we perform this iteration?
        # Iterating through both strings in unison
@@ -12,9 +10,7 @@ def twoStrings(s1, s2):
 
    # Runtime: O(n + m) ~ O(2n)
    # Space: O(n)
-​
    # s = set() # O(1)
-​
    # Using a single set, store all of the characters from one of the
     # strings in the set
    # for char in s1:  # O(n)
@@ -25,9 +21,7 @@ def twoStrings(s1, s2):
    # for char in s2:  # O(m)
    #     if char in s:  # O(1)
    #         return "YES"
-​
    # return "NO"
-​
    # Runtime: O(n * m) ~ O(n^2)
     # Space: O(1) since we aren't using any extra data structures
    # for char in s1:  # O(n)
@@ -35,9 +29,8 @@ def twoStrings(s1, s2):
    #         return "YES"
 
    # return "NO"
-​
     # if one of the sets contains an element in the other set
    if len(set(s1) & set(s2)) > 0:
-        return "YES"
+      return "YES"
 
-    return "NO"
+   return "NO"
