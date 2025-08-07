@@ -12,7 +12,7 @@ def partition_list(lst, x)
     equal_to_x, greater_than_x = greater_or_equal_to_x.partition { |n| n == x }
   
     less_than_x + equal_to_x + greater_than_x
-  end
+end
   
   x = 10
   lst = [9, 12, 3, 5, 14, 10, 10]

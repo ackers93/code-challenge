@@ -12,7 +12,7 @@ class ListNode
       @val = val
       @next = nxt
     end
-  end
+end
   
   def swap_pairs(head)
     # Create a dummy node to simplify edge cases
