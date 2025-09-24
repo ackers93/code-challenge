@@ -28,4 +28,4 @@ print(nth_perfect_number(6)) # 64
 print(nth_perfect_number(7)) # 73
 print(nth_perfect_number(8)) # 82
 print(nth_perfect_number(9)) # 91
-print(nth_perfect_number(10)) # 100
+print(nth_perfect_number(10)) # 109
