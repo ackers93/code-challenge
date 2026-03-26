@@ -84,4 +84,12 @@ class HashStudy
   def reject(&block)
     @data.reject(&block)
   end
+
+  ### Problem 1: Basic Hash Creation 
+  #Create a hash that stores the names and ages of 5 people. Write a method that returns the name of the oldest person.
+  def return_eldest_person()
+    oldest_person = @data.max_by { |_, age| age }
+    oldest_person ? oldest_person.first : nil
+  end
 end
+

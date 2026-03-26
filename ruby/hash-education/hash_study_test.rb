@@ -129,4 +129,15 @@ class HashStudyTest < Test::Unit::TestCase
   # def test_your_custom_method
   #   # Your test code here
   # end
+  # 
+  def test_return_eldest_person
+    @hash_study.add('Alice', 30)
+    @hash_study.add('Bob', 25)
+    @hash_study.add('Charlie', 35)
+    @hash_study.add('David', 28)
+    @hash_study.add('Eve', 32)
+
+    eldest = @hash_study.return_eldest_person
+    assert_equal('Charlie', eldest)
+  end
 end
