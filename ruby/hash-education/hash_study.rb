@@ -91,5 +91,17 @@ class HashStudy
     oldest_person = @data.max_by { |_, age| age }
     oldest_person ? oldest_person.first : nil
   end
+
+  # Problem 2: Counting Characters
+  #Given a string, create a hash that counts the frequency of each character. For example, "hello" should return `{ 'h' => 1, 'e' => 1, 'l' => 2, 'o' => 1 }`. 
+  #
+  def counting_characters(string)
+    counts = {}
+    string.each_char do |char|
+      counts[char] ||= 0
+      counts[char] += 1
+    end
+    counts 
+  end
 end
 

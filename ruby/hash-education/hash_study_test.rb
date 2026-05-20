@@ -140,4 +140,13 @@ class HashStudyTest < Test::Unit::TestCase
     eldest = @hash_study.return_eldest_person
     assert_equal('Charlie', eldest)
   end
+
+  def test_count_characters
+    @hash_study.add('apple', 1)
+    @hash_study.add('banana', 2)
+    @hash_study.add('cherry', 3)
+
+    character_counts = @hash_study.transform_values { |v| v * 2 }
+    assert_equal({ 'apple' => 2, 'banana' => 4, 'cherry' => 6 }, character_counts)
+  end
 end
